@@ -37,7 +37,7 @@ This step is important. We are passing `theme` as context value that each compon
 
 ```js
 //your root component
-import { ThemeProvider, theme } from 'react-native-fundamental';
+import { ThemeProvider, theme } from 'fundamental-react-native';
 
 function App() {
   return (
@@ -52,7 +52,7 @@ function App() {
 
 ```js
 //inside any file
-import { Button } from 'react-native-fundamental';
+import { Button } from 'fundamental-react-native';
 
 function HomeScreen() {
   return (
@@ -65,7 +65,7 @@ function HomeScreen() {
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/iamshadmirza/react-native-fundamental/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/fokind/fundamental-react-native/issues).
 
 ## Similar Projects
 
