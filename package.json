@@ -1,6 +1,6 @@
 {
   "name": "fundamental-react-native",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A reusabale component library and design rules for react-native.",
   "repository": {
     "type": "git",
