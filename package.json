@@ -1,20 +1,20 @@
 {
   "name": "fundamental-react-native",
   "version": "0.0.2",
-  "description": "A reusabale component library and design rules for react-native.",
+  "private": false,
+  "description": "A reusabale component library for React Native based on styles from SAP Fundamental Library.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fokind/fundamental-react-native.git"
   },
   "author": "Dmitry Fokin",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/fokind/fundamental-react-native/issues"
   },
   "homepage": "https://github.com/fokind/fundamental-react-native#readme",
   "keywords": [
     "react-native",
-    "reactjs",
     "reactnative",
     "design-system",
     "ui",
