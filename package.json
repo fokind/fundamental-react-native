@@ -1,6 +1,6 @@
 {
   "name": "fundamental-react-native",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A reusabale component library for React Native based on styles from SAP Fundamental Library.",
   "repository": {
