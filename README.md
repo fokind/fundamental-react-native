@@ -1,6 +1,6 @@
 # Fundamental React Native
 
-[![npm version](https://badge.fury.io/js/fundamental-react.svg)](//www.npmjs.com/package/fundamental-react-native)
+[![npm version](https://badge.fury.io/js/fundamental-react-native.svg)](//www.npmjs.com/package/fundamental-react-native)
 
 ## Description
 
