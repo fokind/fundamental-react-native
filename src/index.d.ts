@@ -10,6 +10,7 @@ export * from './types/Counter';
 export * from './types/CheckBox';
 export * from './types/FullScreenLoader';
 export * from './types/Input';
+export * from './types/InputGroup';
 export * from './types/Box';
 export * from './types/Inline';
 export * from './types/Stack';

@@ -6,6 +6,7 @@ export * from './Calendar';
 export * from './CheckBox';
 export * from './FullScreenLoader';
 export * from './Icon';
+export * from './InputGroup';
 export * from './Input';
 export * from './ListItem';
 export * from './Layout';

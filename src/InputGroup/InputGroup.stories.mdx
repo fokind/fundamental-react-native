@@ -1,0 +1,53 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+import InputGroup from './InputGroup';
+import FormInput from '../Forms/FormInput';
+import Button from '../Button/Button';
+import Stack from '../Layout/Stack';
+
+<Meta title="InputGroup" component={InputGroup} />
+
+# InputGroup
+
+```js
+import { InputGroup } from 'fundmental-react-native';
+```
+
+An **InputGroup** includes form inputs with other children that allow the user to better understand the information being entered.
+
+# Examples
+
+## Primary
+
+<Preview>
+  <Story name="primary">
+    <InputGroup>
+      <Button iconSet="FontAwesome" glyph="chevron-down" />
+      <FormInput />
+    </InputGroup>
+  </Story>
+</Preview>
+
+## Button child
+
+The **InputGroup** children supports buttons by providing the correct styling. Buttons can be shown with a text label or icon.
+
+<Preview>
+  <Story name="button child">
+    <Stack>
+      <InputGroup>
+        <Button iconSet="FontAwesome" glyph="chevron-down" />
+        <FormInput />
+      </InputGroup>
+      <InputGroup>
+        <FormInput />
+        <Button iconSet="FontAwesome" glyph="chevron-down" />
+      </InputGroup>
+    </Stack>
+  </Story>
+</Preview>
+
+# Properties
+
+<Props of={InputGroup} />
