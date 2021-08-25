@@ -1,0 +1,56 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+import Stack from '../Layout/Stack';
+import Inline from '../Layout/Inline';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import CheckBox from './CheckBox';
+
+<Meta title="CheckBox" component={CheckBox} />
+
+# CheckBox
+
+```js
+import { CheckBox } from 'react-native-fundmental';
+```
+
+With a **CheckBox**, all options are visible and the user can make one or more selections. This component can also be disabled and displayed in a row
+
+# Examples
+
+## Primary
+
+<Preview>
+  <Story name="primary">
+    <Inline>
+      <CheckBox>Default Checkbox</CheckBox>
+    </Inline>
+  </Story>
+</Preview>
+
+## Default Checked
+
+<Preview>
+  <Story name="default checked">
+    <Inline>
+      <CheckBox checked>Text Option</CheckBox>
+    </Inline>
+  </Story>
+</Preview>
+
+## Validation States
+
+<Preview>
+  <Story name="validation states">
+    <Inline>
+      <CheckBox validationState="error">Error State</CheckBox>
+      <CheckBox validationState="warning">Warning State</CheckBox>
+      <CheckBox validationState="information">Information State</CheckBox>
+      <CheckBox validationState="success">Success State</CheckBox>
+    </Inline>
+  </Story>
+</Preview>
+
+# Properties
+
+<Props of={CheckBox} />

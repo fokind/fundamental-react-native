@@ -1,0 +1,5 @@
+guides
+.storybook
+docs
+*.stories.mdx
+*.example.js

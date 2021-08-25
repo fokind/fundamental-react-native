@@ -1,0 +1,171 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
+import Inline from '../Layout/Inline';
+import Stack from '../Layout/Stack';
+import Button from './Button';
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+```js
+import { Button } from 'react-native-fundmental';
+```
+
+A **Button** allows users to perform an action. The priority of buttons within a page should be considered. For instance, only use the main button once within a page or dialog. Color is also important. For instance, the most important button has a blue background where as a red button should only be used if the action it performs is potentially destructive.
+
+# Examples
+
+## Primary
+
+<Preview>
+  <Story name="primary">
+    <Inline>
+      <Button>Press me</Button>
+    </Inline>
+  </Story>
+</Preview>
+
+## Options
+
+There are three emphasis styles used to indicate the importance of the button on the page.
+
+- **Emphasized Button**: There should only be one highlighted button on the page. This is the primary call to action.
+- **Regular Button**: The default button style and the most common button. There may be more than one on a page.
+- **Transparent Button**: This is the lowest priority button and most often used with page content like appearing in a table or list. There may be more than one on the page.
+
+<Preview>
+  <Story name="options">
+    <Inline>
+      <Button option="emphasized">Emphasized Button</Button>
+      <Button>Regular Button</Button>
+      <Button option="transparent">Transparent Button</Button>
+    </Inline>
+  </Story>
+</Preview>
+
+## Types
+
+There are three emphasis styles used to indicate the importance of the button on the page.
+
+- **Standard Button**: Neutral or informative color.
+- **Positive Button**: Used for positive actions such as approved, ok, yes.
+- **Negative Button**: Used for negative actions such as decline, cancel, no.
+
+<Preview>
+  <Story name="types">
+    <Inline>
+      <Button>Standard Button</Button>
+      <Button type="positive">Positive Button</Button>
+      <Button type="negative">Negative Button</Button>
+    </Inline>
+  </Story>
+</Preview>
+
+## States
+
+There are four states: default, selected, disabled, and allowFocusOnDisable. allowFocusOnDisabled allows a disabled button to be focusable. This is to ensure a screen reader can tab into the button and read its state. if allowFocusOnDisabled is selected there must be a disabledMessage and enabledMessage prop within the button that is used by the screen reader to announce a message to the user informing them why the button is disabled, or give instructions on how to enable this button then subsequently announce to the user when the button becomes enabled.
+
+<Preview>
+  <Story name="states">
+    <Inline>
+      <Stack>
+        <Button>Default</Button>
+        <Button option="emphasized">Emphasized</Button>
+        <Button option="transparent">Transparent</Button>
+        <Button type="positive">Positive</Button>
+        <Button type="negative">Negative</Button>
+      </Stack>
+      <Stack>
+        <Button selected>Selected</Button>
+        <Button selected option="emphasized">
+          Emphasized
+        </Button>
+        <Button selected option="transparent">
+          Transparent
+        </Button>
+        <Button selected type="positive">
+          Positive
+        </Button>
+        <Button selected type="negative">
+          Negative
+        </Button>
+      </Stack>
+      <Stack>
+        <Button disabled>Disabled</Button>
+        <Button disabled option="emphasized">
+          Emphasized
+        </Button>
+        <Button disabled option="transparent">
+          Transparent
+        </Button>
+        <Button disabled type="positive">
+          Positive
+        </Button>
+        <Button disabled type="negative">
+          Negative
+        </Button>
+      </Stack>
+    </Inline>
+  </Story>
+</Preview>
+
+## Icons
+
+Button can have an icon with text or just an icon.
+
+<Preview>
+  <Story name="icons">
+    <Inline>
+      <Stack>
+        <Button iconSet="FontAwesome" glyph="shopping-cart" option="emphasized">
+          Add to cart
+        </Button>
+        <Inline>
+          <Button
+            iconSet="FontAwesome"
+            glyph="shopping-cart"
+            option="emphasized"
+          />
+        </Inline>
+      </Stack>
+      <Stack>
+        <Button iconSet="FontAwesome" glyph="shopping-cart">
+          Add to cart
+        </Button>
+        <Inline>
+          <Button iconSet="FontAwesome" glyph="shopping-cart" />
+        </Inline>
+      </Stack>
+      <Stack>
+        <Button iconSet="FontAwesome" glyph="filter" option="transparent">
+          Filter
+        </Button>
+        <Inline>
+          <Button iconSet="FontAwesome" glyph="filter" option="transparent" />
+        </Inline>
+      </Stack>
+      <Stack>
+        <Button iconSet="FontAwesome" glyph="check" type="positive">
+          Approve
+        </Button>
+        <Inline>
+          <Button iconSet="FontAwesome" glyph="check" type="positive" />
+        </Inline>
+      </Stack>
+      <Stack>
+        <Button iconSet="FontAwesome" glyph="times" type="negative">
+          Reject
+        </Button>
+        <Inline>
+          <Button iconSet="FontAwesome" glyph="times" type="negative" />
+        </Inline>
+      </Stack>
+    </Inline>
+  </Story>
+</Preview>
+
+# Properties
+
+<Props of={Button} />
