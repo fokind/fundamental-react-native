@@ -9,6 +9,7 @@ export * from './Icon';
 export * from './InputGroup';
 export * from './Input';
 export * from './ListItem';
+export * from './Overlay';
 export * from './Layout';
 export { default as colors } from './util/colors';
 export { default as ThemeProvider } from './util/ThemeProvider';
