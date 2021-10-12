@@ -132,26 +132,29 @@ const renderIcon = ({
   type,
 }) => (
   <Icon
-    style={StyleSheet.flatten([getIconStyle({
-      theme,
-      isBeforeText,
-      hasText,
-      selected,
-      option,
-      type,
-    })])}
+    style={StyleSheet.flatten([
+      getIconStyle({
+        theme,
+        isBeforeText,
+        hasText,
+        selected,
+        option,
+        type,
+      }),
+    ])}
     iconSet={iconSet}
     glyph={glyph}
   />
 );
 
-const Button = props => {
+const Button = React.forwardRef((props, ref) => {
   const theme = useThemeContext();
   const [selected, setSelected] = useState(false);
 
   return (
     <TouchableOpacity
       {...props}
+      ref={ref}
       onPressIn={() => setSelected(true)}
       onPressOut={() => setSelected(false)}
       onPress={props.onPress}
@@ -209,7 +212,7 @@ const Button = props => {
         })}
     </TouchableOpacity>
   );
-};
+});
 
 Button.displayName = 'Button';
 

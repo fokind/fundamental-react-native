@@ -15,6 +15,7 @@ export * from './types/Box';
 export * from './types/Inline';
 export * from './types/Stack';
 export * from './types/ListItem';
+export * from './types/Popover';
 
 export let theme: themeType;
 export let colors: colorsType;

@@ -10,6 +10,7 @@ export * from './InputGroup';
 export * from './Input';
 export * from './ListItem';
 export * from './Layout';
+export * from './Popover';
 export { default as colors } from './util/colors';
 export { default as ThemeProvider } from './util/ThemeProvider';
 export { default as theme } from './util/theme';

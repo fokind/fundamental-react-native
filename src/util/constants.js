@@ -18,4 +18,22 @@ export const ICON_SIZES = {
 
 export const AVATAR_SIZES = ['xs', 's', 'm', 'l', 'xl'];
 
+export const POPPER_PLACEMENTS = [
+  'auto',
+  'auto-start',
+  'auto-end',
+  'bottom-start',
+  'bottom',
+  'bottom-end',
+  'left-start',
+  'left',
+  'left-end',
+  'right-start',
+  'right',
+  'right-end',
+  'top-start',
+  'top',
+  'top-end',
+];
+
 export const ISO_DATE_FORMAT = 'YYYY-MM-DD';
